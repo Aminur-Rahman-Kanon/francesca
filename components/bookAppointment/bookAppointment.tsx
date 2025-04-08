@@ -6,8 +6,8 @@ const BookAppointment = () => {
   return (
     <div className={styles.bookAppoinement}>
         <div className={styles.top}>
-            <h2 className={styles.headingLarge}>I'&apos;m JUST A CALL AWAY</h2>
-            <p className={styles.textMedium}>Don'&apos;t miss this opportunity</p>
+            <h2 className={styles.headingLarge}>I&apos;m JUST A CALL AWAY</h2>
+            <p className={styles.textMedium}>Don&apos;t miss this opportunity</p>
         </div>
         <div className={styles.container}>
             <div className={styles.banner}>

@@ -43,7 +43,7 @@ export default function Testimonials() {
         <div className={styles.grid}>
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className={styles.testimonialCard}>
-              <div className={styles.quote}>&apos;"</div>
+              <div className={styles.quote}>&apos;</div>
               <p className={styles.testimonialText}>{testimonial.quote}</p>
               <div className={styles.testimonialAuthor}>
                 <div className={styles.authorImage}>

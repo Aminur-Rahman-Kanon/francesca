@@ -38,7 +38,7 @@ export default function Offers() {
         <div className={styles.videoContainer}>
           <video id="video" playsInline className={styles.video}>
             <source src="/video/test.mp4"></source>
-            Your browser doesn'&apos;t support video
+            Your browser doesn&apos;t support video
           </video>
           <button className={styles.playButton} onClick={playVideoHandler}>
             <Image src={play ? '/images/others/pause.png' : '/images/others/play.png'} width={100} height={100} alt="play button"/>
