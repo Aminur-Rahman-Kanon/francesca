@@ -10,7 +10,7 @@ export default function Offers() {
   const [play, setPlay] = useState<boolean>(false);
 
   const playVideoHandler = ():void => {
-    const video = document.getElementById('video');
+    const video = document.getElementById('video') as HTMLVideoElement;
 
     if (!video) return;
 
@@ -25,7 +25,7 @@ export default function Offers() {
   // const image:string = play ? '/image/'
 
   useEffect(() => {
-    const video = document.getElementById('video');
+    const video = document.getElementById('video') as HTMLVideoElement;
     video?.addEventListener('play', () => setPlay(true));
     video?.addEventListener('pause', () => setPlay(false));
     video?.addEventListener('ended', () => setPlay(false));
