@@ -7,7 +7,7 @@ export default function Treatments() {
     <section className={styles.treatments}>
       <div className={styles.container}>
         <div className={styles.quote}>
-          <span className={styles.quoteSymbol}>&apos;"</span>
+          <span className={styles.quoteSymbol}>&apos;</span>
           <h1 className={styles.quoteText}>
             Francesca, A Genuine English Blonde Massuese
           </h1>
