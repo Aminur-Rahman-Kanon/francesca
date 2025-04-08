@@ -8,7 +8,7 @@ export default function Contact() {
           <span className={styles.subtitle}>Get In Touch</span>
           <h2 className={styles.title}>Contact Us</h2>
           <p className={styles.description}>
-            Have a project in mind? Let's talk about how we can help bring your ideas to life
+            Have a project in mind? Let'&apos;s talk about how we can help bring your ideas to life
           </p>
         </div>
 

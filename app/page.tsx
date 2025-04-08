@@ -5,7 +5,6 @@ import Offers from "@/components/offers/offers"
 import SpecialTreatments from "@/components/special-treatments/special-treatments"
 import Blog from "@/components/blog/blog"
 import Footer from "@/components/footer/footer"
-import SocialButtons from "@/components/social-buttons/social-buttons"
 import Massages from "@/components/massages/massages"
 import BookAppointment from "@/components/bookAppointment/bookAppointment"
 
@@ -21,7 +20,6 @@ export default function Home() {
       <SpecialTreatments />
       <Blog />
       <Footer />
-      {/* <SocialButtons /> */}
     </main>
   )
 }

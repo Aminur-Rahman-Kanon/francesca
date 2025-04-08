@@ -50,9 +50,9 @@ const Massages = () => {
                     <div className={styles.banner}>
                         <h2 className={styles.headingWhiteLarge}>SUBEKE STOOL</h2>
                         <p className={styles.textSmall}>
-                            The Sukebe Stool is specially designed to facilitate the washing of the genital area.  It originates from Japan which has a long history of Bath Houses, 'sento' if a public wash house, or 'onsen' if at a hot spring.
+                            The Sukebe Stool is specially designed to facilitate the washing of the genital area.  It originates from Japan which has a long history of Bath Houses, '&apos;sento'&apos; if a public wash house, or '&apos;onsen'&apos; if at a hot spring.
                             If you choose the standalone session, I will be nude, as you will be.
-                            If you take the 'Add-in' option, I will be dressed according to the type of massage you have booked (Lingerie, Topless or Fully Naturist). The time for the Sukebe Experience, around 20 minutes, will reduce the massage time. (eg you book a 1hour massage. The 60 mins total will be divided into 40 mins massaging and 20 mins Sukebe)
+                            If you take the '&apos;Add-in'&apos; option, I will be dressed according to the type of massage you have booked (Lingerie, Topless or Fully Naturist). The time for the Sukebe Experience, around 20 minutes, will reduce the massage time. (eg you book a 1hour massage. The 60 mins total will be divided into 40 mins massaging and 20 mins Sukebe)
                         </p>
                         <Link href='/treatments/trantric' className={styles.link}>BOOK SUBEKE</Link>
                     </div>
@@ -64,7 +64,7 @@ const Massages = () => {
                         <p className={styles.textSmall}>
                             This video shows your experience of sensual naturist massage with me from your arrival to leaving with a smile on your face! 
                             As I work best with freshly washed bodies, I will ask you to shower first then join me at my massage table.
-                            With you seated on my table, I'll oil all of your body. This allows you to relax with us both being naked and get used to my touch.
+                            With you seated on my table, I'&apos;ll oil all of your body. This allows you to relax with us both being naked and get used to my touch.
                             I will then ask you to lie face down and give your back, shoulders, glutes, thighs and calves a professional massage.
                             With you lying face up, I will continue your massage on your chest, arms, and legs to get you completely relaxed.
                         </p>

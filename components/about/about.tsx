@@ -13,7 +13,7 @@ export default function About() {
           <h2 className={styles.title}>We create digital experiences that stand out</h2>
           <p className={styles.description}>
             We are a creative agency specializing in web design, development, branding, and digital marketing. With over
-            10 years of experience, we've helped businesses of all sizes achieve their goals through innovative digital
+            10 years of experience, we'&apos;ve helped businesses of all sizes achieve their goals through innovative digital
             solutions.
           </p>
           <div className={styles.stats}>

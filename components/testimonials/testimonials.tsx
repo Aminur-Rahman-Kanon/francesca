@@ -36,14 +36,14 @@ export default function Testimonials() {
           <span className={styles.subtitle}>Testimonials</span>
           <h2 className={styles.title}>What Our Clients Say</h2>
           <p className={styles.description}>
-            Don't just take our word for it - hear from some of our satisfied clients
+            Don&apos;t just take our word for it - hear from some of our satisfied clients
           </p>
         </div>
 
         <div className={styles.grid}>
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className={styles.testimonialCard}>
-              <div className={styles.quote}>"</div>
+              <div className={styles.quote}>&apos;"</div>
               <p className={styles.testimonialText}>{testimonial.quote}</p>
               <div className={styles.testimonialAuthor}>
                 <div className={styles.authorImage}>

@@ -5,22 +5,10 @@ import Link from "next/link"
 import styles from "./header.module.css"
 
 export default function Header() {
-  const [searchOpen, setSearchOpen] = useState(false)
 
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        {/* <div className={styles.searchContainer}>
-          <button className={styles.searchButton} onClick={() => setSearchOpen(!searchOpen)}>
-            <span className={styles.searchIcon}>⌕</span> Search
-          </button>
-          {searchOpen && (
-            <div className={styles.searchInput}>
-              <input type="text" placeholder="Search..." />
-            </div>
-          )}
-        </div> */}
-
         <nav className={styles.navigation}>
           <Link href="/" className={`${styles.navLink} ${styles.active}`}>
             HOME
