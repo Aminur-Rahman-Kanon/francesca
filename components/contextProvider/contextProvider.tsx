@@ -2,23 +2,35 @@
 
 import React, { createContext, useContext, useState } from 'react';
 
-const DrawerContext = createContext<any>(null);
+export interface ContextType {
+    sidedrawer: boolean,
+    openSideDrawer: () => void,
+    closeSideDrawer: () => void,
+    toggleSideDrawer: () => void
+}
+
+export const GlobalContext = createContext<ContextType | null>(null)
+
 
 export function ContextProvider ({ children }: { children:React.ReactNode }) {
-
+    
     const [sidedrawer, setSidedrawer] = useState<boolean>(false);
 
-    const openSideDrawer = () => setSidedrawer(true);
-    const closeSideDrawer = () => setSidedrawer(false);
-    const toggleSideDrawer = () => setSidedrawer(prev => !prev);
+    const contextData:ContextType = {
+        sidedrawer,
+        openSideDrawer: () => setSidedrawer(true),
+        closeSideDrawer: () => setSidedrawer(false),
+        toggleSideDrawer: () => setSidedrawer(prev => !prev)
+    }
+    
 
     return (
-        <DrawerContext.Provider value={{ sidedrawer, openSideDrawer, closeSideDrawer, toggleSideDrawer }}>
+        <GlobalContext.Provider value={contextData}>
             {children}
-        </DrawerContext.Provider>
+        </GlobalContext.Provider>
     )
 }
 
-export function useContextProvider() {
-    return useContext(DrawerContext);
+export const useContextProvider = ():ContextType | null => {
+    return useContext(GlobalContext);
 }

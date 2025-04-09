@@ -4,24 +4,25 @@ import React from 'react'
 import styles from './sidedrawer.module.css'
 import { X } from 'lucide-react'
 import Link from 'next/link'
-import { motion, AnimatePresence } from 'framer-motion'
-import { useContextProvider } from '../contextProvider/contextProvider'
+// import { motion, AnimatePresence } from 'framer-motion'
+import { useContextProvider } from '../contextProvider/contextProvider';
 import { usePathname } from 'next/navigation'
 
 function SideDrawer() {
-    const {sidedrawer, closeSideDrawer} = useContextProvider();
 
     const path = usePathname();
+
+    const context = useContextProvider()
 
     console.log(path)
   
     return (
-      <div className={sidedrawer ? `${styles.sidedrawer} ${styles.open}` : styles.sidedrawer}>
+      <div className={context?.sidedrawer ? `${styles.sidedrawer} ${styles.open}` : styles.sidedrawer}>
         <div className={styles.top}>
             <div className={styles.logo}>
                 <h2 className={styles.headingLarge}>FRANCESCA</h2>
             </div>
-            <div className={styles.x}onClick={closeSideDrawer}>
+            <div className={styles.x}onClick={context?.closeSideDrawer}>
                 <X className={styles.xBtn}/>
             </div>
         </div>
