@@ -6,15 +6,12 @@ import { useContextProvider } from '../contextProvider/contextProvider'
 
 export default function Header() {
 
-  const { openSideDrawer, sidedrawer } = useContextProvider()
-
-  console.log(openSideDrawer)
-  console.log(sidedrawer)
+  const context = useContextProvider()
 
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div className={styles.mobileMenu} onClick={openSideDrawer}>
+        <div className={styles.mobileMenu} onClick={context?.openSideDrawer}>
           <AlignCenter />
         </div>
         <nav className={styles.navigation}>
