@@ -1,13 +1,22 @@
 "use client"
-
+import { AlignCenter } from 'lucide-react'
 import Link from "next/link"
 import styles from "./header.module.css"
+import { useContextProvider } from '../contextProvider/contextProvider'
 
 export default function Header() {
+
+  const { openSideDrawer, sidedrawer } = useContextProvider()
+
+  console.log(openSideDrawer)
+  console.log(sidedrawer)
 
   return (
     <header className={styles.header}>
       <div className={styles.container}>
+        <div className={styles.mobileMenu} onClick={openSideDrawer}>
+          <AlignCenter />
+        </div>
         <nav className={styles.navigation}>
           <Link href="/" className={`${styles.navLink} ${styles.active}`}>
             HOME

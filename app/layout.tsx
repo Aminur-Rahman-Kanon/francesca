@@ -2,6 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Cormorant_Garamond, Montserrat } from "next/font/google"
 import "./globals.css"
+import { ContextProvider } from '../components/contextProvider/contextProvider';
+import Sidedrawer from "@/components/sidedrawer/sidedrawer";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -19,8 +21,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "FRANCESCA",
-  description: "The Finest English Messuesue",
-    generator: 'v0.dev'
+  description: "The Finest English Messuesue"
 }
 
 export default function RootLayout({
@@ -30,7 +31,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${cormorant.variable} ${montserrat.variable}`}>{children}</body>
+      <body className={`${cormorant.variable} ${montserrat.variable}`}>
+        <ContextProvider>
+          <Sidedrawer />
+          <main>
+            {children}
+          </main>
+        </ContextProvider>
+      </body>
     </html>
   )
 }
