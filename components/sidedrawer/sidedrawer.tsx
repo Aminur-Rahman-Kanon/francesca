@@ -17,7 +17,7 @@ function SideDrawer() {
     const context = useContextProvider()
 
     const enableScroll = () => {
-        window.onscroll = () => {}
+        window.onscroll = (() => {})
     }
 
     useEffect(() => {
