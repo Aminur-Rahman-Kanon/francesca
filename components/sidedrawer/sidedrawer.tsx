@@ -17,7 +17,7 @@ function SideDrawer() {
     const context = useContextProvider()
 
     useEffect(() => {
-        context?.sidedrawer ? document.body.style.overflow = 'hidden' : document.body.style.overflow = ''
+        context?.sidedrawer ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'
     }, [context?.sidedrawer])
   
     return (
