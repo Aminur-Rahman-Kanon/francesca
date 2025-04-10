@@ -7,7 +7,7 @@ import Link from 'next/link'
 // import { motion, AnimatePresence } from 'framer-motion'
 import { useContextProvider } from '../contextProvider/contextProvider';
 import { usePathname } from 'next/navigation'
-import { disableScroll } from '../../utilities/utilities';
+// import { disableScroll } from '../../utilities/utilities';
 import Image from 'next/image'
 
 function SideDrawer() {
