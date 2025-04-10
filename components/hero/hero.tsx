@@ -1,13 +1,13 @@
 import Image from "next/image"
 import styles from "./hero.module.css"
-import hero from '../../public/images/hero/hero.png';
+// import hero from '../../public/images/hero/hero.png';
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.heroImage}>
         <Image
-          src={hero}
+          src={'/images/hero/hero_1.png'}
           alt="Woman relaxing in bathtub"
           fill
           priority
