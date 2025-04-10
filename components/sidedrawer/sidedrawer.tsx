@@ -16,9 +16,9 @@ function SideDrawer() {
 
     const context = useContextProvider()
 
-    useEffect(() => {
-        context?.sidedrawer ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'
-    }, [context?.sidedrawer])
+    // useEffect(() => {
+    //     context?.sidedrawer ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'
+    // }, [context?.sidedrawer])
   
     return (
       <div className={context?.sidedrawer ? `${styles.sidedrawer} ${styles.open}` : styles.sidedrawer}>
