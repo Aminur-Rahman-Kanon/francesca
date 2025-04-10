@@ -17,7 +17,7 @@ function SideDrawer() {
     const context = useContextProvider()
 
     useEffect(() => {
-        context?.sidedrawer ? disableScroll : window.onscroll = () => {}
+        context?.sidedrawer ? disableScroll() : window.onscroll = () => {}
     }, [context?.sidedrawer])
   
     return (
