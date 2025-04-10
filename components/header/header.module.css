@@ -64,9 +64,14 @@
 }
 
 .logo {
-  font-family: var(--font-cormorant), serif;
-  font-size: 32px;
-  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 200px;
+  height: auto;
 }
 
 .mobileMenu {
@@ -85,12 +90,8 @@
     display: flex;
   }
 
-  /* .navLink {
-    font-size: 10px;
+  .img {
+    width: 100px;
   }
-
-  .logo {
-    font-size: 24px;
-  } */
 }
 

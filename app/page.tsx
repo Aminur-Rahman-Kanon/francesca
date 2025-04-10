@@ -7,6 +7,8 @@ import Blog from "@/components/blog/blog"
 import Footer from "@/components/footer/footer"
 import Massages from "@/components/massages/massages"
 import BookAppointment from "@/components/bookAppointment/bookAppointment"
+import Tantra from "@/components/tantra/tantra"
+import Guidelines from "@/components/guidelines/guidelines"
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <BookAppointment />
       <Massages />
       <Offers />
+      <Tantra />
+      <Guidelines />
       <SpecialTreatments />
       <Blog />
       <Footer />

@@ -3,7 +3,7 @@ import { AlignCenter } from 'lucide-react'
 import Link from "next/link"
 import styles from "./header.module.css"
 import { useContextProvider } from '../contextProvider/contextProvider'
-import Logo from '../logo/logo'
+import Image from 'next/image'
 
 export default function Header() {
 
@@ -15,7 +15,7 @@ export default function Header() {
         <div className={styles.navContainer}>
           <div className={styles.logoContainer}>
             <Link href="/" className={styles.logo}>
-              <Logo />
+              <Image src={'/images/logo/logo_4.png'} alt='francesca' height={0} width={0} unoptimized quality={100} className={styles.img} />
             </Link>
             <div className={styles.mobileMenu} onClick={context?.openSideDrawer}>
               <AlignCenter />
@@ -29,7 +29,7 @@ export default function Header() {
               TREATMENTS
             </Link>
             <Link href="/portfolio" className={styles.navLink}>
-              TANTRA
+              GUIDELINES
             </Link>
             <Link href="/blog" className={styles.navLink}>
               PRICING

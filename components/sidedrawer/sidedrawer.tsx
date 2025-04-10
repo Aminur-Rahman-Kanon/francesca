@@ -34,7 +34,7 @@ function SideDrawer() {
         <nav className={styles.nav}>
             <Link href={'/'} className={path === '/' ? `${styles.link} ${styles.linkActive}` : styles.link}>HOME</Link>
             <Link href={'/'} className={path === '/treatments' ? `${styles.link} ${styles.linkActive}` : styles.link}>TREATMENTS</Link>
-            <Link href={'/'} className={path === '/tantra' ? `${styles.link} ${styles.linkActive}` : styles.link}>TANTRA</Link>
+            <Link href={'/'} className={path === '/guidelines' ? `${styles.link} ${styles.linkActive}` : styles.link}>GUIDELINES</Link>
             <Link href={'/'} className={path === '/pricing' ? `${styles.link} ${styles.linkActive}` : styles.link}>PRICING</Link>
             <Link href={'/'} className={path === '/blog' ? `${styles.link} ${styles.linkActive}` : styles.link}>BLOG</Link>
             <Link href={'/'} className={path === '/about' ? `${styles.link} ${styles.linkActive}` : styles.link}>ABOUT</Link>

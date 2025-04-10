@@ -36,7 +36,7 @@ export default function Offers() {
       <h2 className={styles.headingWhiteLarge}>MASSAGE MOMENT</h2>
       <div className={styles.videoSection}>
         <div className={styles.videoContainer}>
-          <video id="video" playsInline className={styles.video}>
+          <video itemType="video/mp4" id="video" playsInline muted className={styles.video}>
             <source src="/video/test.mp4"></source>
             Your browser doesn&apos;t support video
           </video>
@@ -46,7 +46,7 @@ export default function Offers() {
         </div>
       </div>
 
-      <div className={styles.container}>
+      {/* <div className={styles.container}>
         <h2 className={styles.sectionTitle}>
           AMAZING <span>OFFERS</span>
         </h2>
@@ -104,7 +104,7 @@ export default function Offers() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }

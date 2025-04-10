@@ -1,6 +1,7 @@
 .offers {
   background-color: black;
-  padding-bottom: 100px;
+  padding: 100px 20px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,6 +181,10 @@
 }
 
 @media (max-width: 768px) {
+  .offers {
+    padding: 50px 20px;
+  }
+  
   .sectionTitle {
     font-size: 36px;
   }
