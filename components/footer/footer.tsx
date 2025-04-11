@@ -17,7 +17,7 @@ export default function Footer() {
             <h3 className={styles.columnTitle}>CONTACT</h3>
             <ul className={styles.contactList}>
               <li>
-                <Link href="tel:+1123456789">+1123456789</Link>
+                <Link href="tel:+447826761268">+447826761268</Link>
               </li>
               <li>
                 <Link href="mailto:CHEA@QODEINTERACTIVE.COM">CHEA@QODEINTERACTIVE.COM</Link>

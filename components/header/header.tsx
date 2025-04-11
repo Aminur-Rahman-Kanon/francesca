@@ -28,7 +28,7 @@ export default function Header() {
             <Link href="/treatments" className={styles.navLink}>
               TREATMENTS
             </Link>
-            <Link href="/portfolio" className={styles.navLink}>
+            <Link href="/guidelines" className={styles.navLink}>
               GUIDELINES
             </Link>
             <Link href="/blog" className={styles.navLink}>
