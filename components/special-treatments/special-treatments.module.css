@@ -23,8 +23,8 @@
 
 .image {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 .textContent {
@@ -47,11 +47,11 @@
 
 .description {
   font-family: var(--font-cormorant), serif;
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  color: white;
   line-height: 1.6;
   margin-bottom: 30px;
-  max-width: 500px;
+  /* max-width: 500px; */
 }
 
 .viewMoreLink {
@@ -69,39 +69,13 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.partnersLogos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.logoItem {
-  padding: 0 20px;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-}
-
-.logoItem:hover {
-  opacity: 1;
-}
-
-.logo {
-  filter: brightness(0) invert(1);
-}
-
 @media (max-width: 992px) {
   .content {
     grid-template-columns: 1fr;
   }
 
-  .partnersLogos {
-    gap: 30px;
-    justify-content: center;
-  }
-
-  .logoItem {
-    padding: 0 15px;
+  .textContent {
+    width: 100%;
   }
 }
 

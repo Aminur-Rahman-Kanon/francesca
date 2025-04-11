@@ -8,7 +8,7 @@ const Massages = () => {
         <div className={styles.massages}>
             <div className={styles.top}>
                 <h2 className={styles.headingWhiteLarge}>TREATMENTS</h2>
-                <p className={styles.textSmall}>This is just an introduction to my treatments, please go to my Therapies Page for more information.</p>
+                <p className={styles.textSmall}>This is just an introduction to my treatments, please go to my <Link href={'/treatments'} className={styles.otherLink}>Treatments Page</Link> for more information.</p>
             </div>
             
             <div className={styles.container}>

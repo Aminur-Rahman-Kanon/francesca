@@ -15,7 +15,7 @@ export default function Hero() {
         />
       </div>
       <div className={styles.heroContent}>
-        <h1 className={styles.heroTitle}>TREAT YOURSELF TO AN <span className={styles.strong}>SENSUAL MASSAGE</span></h1>
+        <h1 className={styles.heroTitle}>TREAT YOURSELF WITH AN <span className={styles.strong}>SENSUAL MASSAGE</span></h1>
       </div>
     </section>
   )

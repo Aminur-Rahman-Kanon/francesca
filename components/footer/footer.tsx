@@ -1,5 +1,6 @@
 import Link from "next/link"
 import styles from "./footer.module.css"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -7,7 +8,9 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.footerContent}>
           <div className={styles.footerLogo}>
-            <Link href="/">Francesca</Link>
+            <Link href="/" className={styles.logoLink}>
+              <Image src={'/images/logo/logo_4.png'} alt="francesca" height={0} width={0} unoptimized quality={100} className={styles.logo} />
+            </Link>
           </div>
 
           <div className={styles.footerColumn}>

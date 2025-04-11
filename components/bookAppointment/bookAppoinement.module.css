@@ -30,7 +30,6 @@
 }
 
 .headingLarge {
-  /* font-family: var(--font-cormorant), serif; */
   font-family: inherit;
   font-size: 2.5rem;
   color: white;
@@ -63,7 +62,7 @@
 }
 
 .link {
-    text-decoration: none;
+    text-decoration: underline;
     font-family: inherit;
     font-size: 1.8rem;
     color: white;

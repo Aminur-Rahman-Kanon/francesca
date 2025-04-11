@@ -18,27 +18,37 @@ function SideDrawer() {
 
     useEffect(() => {
         context?.sidedrawer ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'
+
+        return () => {
+            document.body.style.overflow = 'auto';
+        }
     }, [context?.sidedrawer])
+
+    useEffect(() => {
+        context?.closeSideDrawer();
+    }, [path])
   
     return (
       <div className={context?.sidedrawer ? `${styles.sidedrawer} ${styles.open}` : styles.sidedrawer}>
-        <div className={styles.top}>
-            <div className={styles.logo}>
-                <Image src={'/images/logo/logo_3.png'} alt='francesca' width={0} height={0} className={styles.img} unoptimized quality={100}/>
+        <div className={styles.topContainer}>
+            <div className={styles.top}>
+                <div className={styles.logo}>
+                    <Image src={'/images/logo/logo_3.png'} alt='francesca' width={0} height={0} className={styles.img} unoptimized quality={100}/>
+                </div>
+                <div className={styles.x}onClick={context?.closeSideDrawer}>
+                    <X className={styles.xBtn}/>
+                </div>
             </div>
-            <div className={styles.x}onClick={context?.closeSideDrawer}>
-                <X className={styles.xBtn}/>
-            </div>
-        </div>
 
-        <nav className={styles.nav}>
-            <Link href={'/'} className={path === '/' ? `${styles.link} ${styles.linkActive}` : styles.link}>HOME</Link>
-            <Link href={'/'} className={path === '/treatments' ? `${styles.link} ${styles.linkActive}` : styles.link}>TREATMENTS</Link>
-            <Link href={'/'} className={path === '/guidelines' ? `${styles.link} ${styles.linkActive}` : styles.link}>GUIDELINES</Link>
-            <Link href={'/'} className={path === '/pricing' ? `${styles.link} ${styles.linkActive}` : styles.link}>PRICING</Link>
-            <Link href={'/'} className={path === '/blog' ? `${styles.link} ${styles.linkActive}` : styles.link}>BLOG</Link>
-            <Link href={'/'} className={path === '/about' ? `${styles.link} ${styles.linkActive}` : styles.link}>ABOUT</Link>
-        </nav>
+            <nav className={styles.nav}>
+                <Link href={'/'} className={path === '/' ? `${styles.link} ${styles.linkActive}` : styles.link}>HOME</Link>
+                <Link href={'/treatments'} className={path === '/treatments' ? `${styles.link} ${styles.linkActive}` : styles.link}>TREATMENTS</Link>
+                <Link href={'/'} className={path === '/guidelines' ? `${styles.link} ${styles.linkActive}` : styles.link}>GUIDELINES</Link>
+                <Link href={'/'} className={path === '/pricing' ? `${styles.link} ${styles.linkActive}` : styles.link}>PRICING</Link>
+                <Link href={'/'} className={path === '/blog' ? `${styles.link} ${styles.linkActive}` : styles.link}>BLOG</Link>
+                <Link href={'/'} className={path === '/about' ? `${styles.link} ${styles.linkActive}` : styles.link}>ABOUT</Link>
+            </nav>
+        </div>
 
         <div className={styles.social}>
             <div className={styles.icon}>

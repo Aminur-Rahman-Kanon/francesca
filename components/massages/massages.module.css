@@ -94,6 +94,10 @@
     color: black;
 }
 
+.otherLink {
+    text-decoration: underline;
+}
+
 @media (max-width: 1024px) {
     .massages {
         gap: 50px;

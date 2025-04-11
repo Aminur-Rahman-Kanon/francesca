@@ -1,0 +1,140 @@
+.treatments {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    /* padding: 100px 20px; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-cormorant), serif;
+}
+
+.hero {
+    width: 100%;
+    max-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner {
+    width: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.headingLarge {
+    font-family: inherit;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    /* text-align: center; */
+    margin: 20px 0;
+}
+
+.headingMedium {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.headingSmall {
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: white;
+}
+
+.lists {
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    line-height: 3rem;
+}
+
+.textSmall {
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    margin: 10px 0;
+}
+
+.strong {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.imgContainer {
+    width: 500px;
+    max-height: 500px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+
+@media (max-width: 767px) {
+    .imgContainer {
+        width: 100%;
+        /* height: 400px; */
+    }
+
+    .headingLarge {
+        font-size: 2rem;
+    }
+
+    .headingMedium {
+        font-size: 1.8rem;
+    }
+
+    .headingSmall {
+        font-size: 1.5rem;
+    }
+
+    .textSmall {
+        font-size: 1.4rem;
+    }
+
+    .strong {
+        font-size: 1.5rem;
+    }
+}

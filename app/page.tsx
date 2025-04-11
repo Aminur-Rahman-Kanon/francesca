@@ -13,17 +13,15 @@ import Guidelines from "@/components/guidelines/guidelines"
 export default function Home() {
   return (
     <main>
-      <Header />
       <Hero />
       <Treatments />
       <BookAppointment />
       <Massages />
-      <Offers />
       <Tantra />
       <Guidelines />
+      <Offers />
       <SpecialTreatments />
       <Blog />
-      <Footer />
     </main>
   )
 }

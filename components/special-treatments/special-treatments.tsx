@@ -11,76 +11,22 @@ export default function SpecialTreatments() {
             <Image
               src="/images/treatments/treatment_1.png"
               alt="Woman in bathtub"
-              width={600}
-              height={500}
+              width={0}
+              height={0}
               className={styles.image}
+              unoptimized
+              quality={100}
             />
           </div>
 
           <div className={styles.textContent}>
-            <h2 className={styles.title}>
-              SPECIAL <br />
-              <span className={styles.italic}>TREATMENTS</span> TO <br />
-              RELAX YOUR MIND <br />
-              SOUL AND <span className={styles.italic}>BODY</span>
-            </h2>
-
-            <p className={styles.description}>
-              Nisi est sit amet facilisis magna etiam tempor orci. At imperdict dui accumsan sit amet nulla facilisi
-              morbi.
-            </p>
-
+            <h2 className={styles.title}>RELIEVING MASSAGES</h2>
+            <p className={styles.description}>Massage is a great way of relieving the stresses of modern living. A Sensual Massage goes a step futher and relieves other pent up needs for both ladies and gentlemen.</p>
+            <p className={styles.description}>With my massages, the sensual stimulation is integrated into the flow of the massage, starting while I relax you with a little teasing. Was that an accidental brush?</p>
+            <p className={styles.description}>A little teaser for you! Please let me have your feedback on this video by using my Online Form. Or let me know what you'd like to see on my Massage Website.</p>
             <Link href="#" className={styles.viewMoreLink}>
               View more
             </Link>
-          </div>
-        </div>
-
-        <div className={styles.partnersLogos}>
-          <div className={styles.logoItem}>
-            <Image
-              src="/placeholder.svg?height=60&width=120"
-              alt="Vector Logo"
-              width={120}
-              height={60}
-              className={styles.logo}
-            />
-          </div>
-          <div className={styles.logoItem}>
-            <Image
-              src="/placeholder.svg?height=60&width=120"
-              alt="Partner Logo"
-              width={120}
-              height={60}
-              className={styles.logo}
-            />
-          </div>
-          <div className={styles.logoItem}>
-            <Image
-              src="/placeholder.svg?height=60&width=120"
-              alt="Magnolia Logo"
-              width={120}
-              height={60}
-              className={styles.logo}
-            />
-          </div>
-          <div className={styles.logoItem}>
-            <Image
-              src="/placeholder.svg?height=60&width=120"
-              alt="Energy Logo"
-              width={120}
-              height={60}
-              className={styles.logo}
-            />
-          </div>
-          <div className={styles.logoItem}>
-            <Image
-              src="/placeholder.svg?height=60&width=120"
-              alt="Wellness Logo"
-              width={120}
-              height={60}
-              className={styles.logo}
-            />
           </div>
         </div>
       </div>
