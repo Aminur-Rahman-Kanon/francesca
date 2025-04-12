@@ -6,6 +6,9 @@ import { ContextProvider } from '../components/contextProvider/contextProvider';
 import Sidedrawer from "@/components/sidedrawer/sidedrawer";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
+import Warning from "@/components/warning/warning";
+import Backdrop from "@/components/backdrop/backdrop";
+import Test from "@/components/test/test";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -35,13 +38,17 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${cormorant.variable} ${montserrat.variable}`}>
         <ContextProvider>
-          <Sidedrawer />
-          <Header />
-          <main>
-            {children}
-          </main>
+          <Warning />
+          <Backdrop />
+          <Test>
+            <Sidedrawer />
+            <Header />
+            <main>
+              {children}
+            </main>
+            <Footer />
+          </Test>
         </ContextProvider>
-        <Footer />
       </body>
     </html>
   )

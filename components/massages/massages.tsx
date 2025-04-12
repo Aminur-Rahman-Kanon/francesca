@@ -48,13 +48,13 @@ const Massages = () => {
                         <Image src={'/images/massage/b2b.jpg'} alt='trantric massage' width={0} height={0} style={{width: '100%', height: '100%', objectFit: 'cover'}} unoptimized={true} quality={100}/>
                     </div>
                     <div className={styles.banner}>
-                        <h2 className={styles.headingWhiteLarge}>SUBEKE STOOL</h2>
+                        <h2 className={styles.headingWhiteLarge}>SUKEKBE STOOL</h2>
                         <p className={styles.textSmall}>
                             The Sukebe Stool is specially designed to facilitate the washing of the genital area.  It originates from Japan which has a long history of Bath Houses, &apos;sento&apos; if a public wash house, or &apos;onsen&apos; if at a hot spring.
                             If you choose the standalone session, I will be nude, as you will be.
                             If you take the &apos;Add-in&apos; option, I will be dressed according to the type of massage you have booked (Lingerie, Topless or Fully Naturist). The time for the Sukebe Experience, around 20 minutes, will reduce the massage time. (eg you book a 1hour massage. The 60 mins total will be divided into 40 mins massaging and 20 mins Sukebe)
                         </p>
-                        <Link href='/treatments/trantric' className={styles.link}>BOOK SUBEKE</Link>
+                        <Link href='/treatments/trantric' className={styles.link}>BOOK SUKEBE</Link>
                     </div>
                 </div>
 
