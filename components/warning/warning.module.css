@@ -23,6 +23,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .textSmall {
@@ -30,6 +31,8 @@
     font-size: 1.5rem;
     font-weight: 400;
     color: white;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .btns {
@@ -65,4 +68,20 @@
 .btn:nth-of-type(2):hover {
     background-color: white;
     color: black;
+}
+
+@media (max-width:767px) {
+    .warning {
+        width: 95%;
+    }
+
+    .btns {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        max-width: unset;
+    }
 }
