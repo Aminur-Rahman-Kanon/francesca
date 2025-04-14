@@ -16,7 +16,7 @@ const BookAppointment = () => {
                 <a href='tel:00447826761268' className={styles.link}>+447826761268</a>
                 <p className={styles.textSmall}>GATEWICK, UK</p>
                 <p className={styles.textSmall}>Or</p>
-                <p className={styles.textSmall}>Fill out this form</p>
+                <Link href={'/booking'} className={styles.link}>Fill out this form</Link>
                 <p className={styles.textSmall}>Alternatively visit</p>
                 <Link href={'https://admireme.vip/francescacare'} className={styles.link}>My AdmireMe Page</Link>
             </div>

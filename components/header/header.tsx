@@ -4,10 +4,15 @@ import Link from "next/link"
 import styles from "./header.module.css"
 import { useContextProvider } from '../contextProvider/contextProvider'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
 
   const context = useContextProvider()
+  
+  const path = usePathname();
+
+  console.log(path)
 
   return (
     <header className={styles.header}>
@@ -22,22 +27,22 @@ export default function Header() {
             </div>
           </div>
           <nav className={styles.navigation}>
-            <Link href="/" className={`${styles.navLink} ${styles.active}`}>
+            <Link href="/" className={ path === '/' ? `${styles.navLink} ${styles.active}` : styles.navLink}>
               HOME
             </Link>
-            <Link href="/treatments" className={styles.navLink}>
+            <Link href="/treatments" className={ path === '/treatments' ? `${styles.navLink} ${styles.active}` : styles.navLink}>
               TREATMENTS
             </Link>
-            <Link href="/guidelines" className={styles.navLink}>
+            <Link href="/guidelines" className={ path === '/guidelines' ? `${styles.navLink} ${styles.active}` : styles.navLink}>
               GUIDELINES
             </Link>
-            <Link href="/blog" className={styles.navLink}>
+            <Link href="/pricing" className={ path === '/pricing' ? `${styles.navLink} ${styles.active}` : styles.navLink}>
               PRICING
             </Link>
-            <Link href="/shop" className={styles.navLink}>
+            <Link href="/blog" className={ path === '/blog' ? `${styles.navLink} ${styles.active}` : styles.navLink}>
               BLOG
             </Link>
-            <Link href="/landing" className={styles.navLink}>
+            <Link href="/about" className={ path === '/about' ? `${styles.navLink} ${styles.active}` : styles.navLink}>
               ABOUT
             </Link>
           </nav>

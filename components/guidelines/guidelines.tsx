@@ -22,7 +22,7 @@ const Guidelines = () => {
                     <p className={styles.textSmall}>Be on time for your appointment. If early, rest up somewhere until the time. If you are going to be late, let me know by message as soon as possible. If you are too late I may have to cancel or shorten your appointment to avoid impacting other clients.</p>
                     <div className={styles.warning}>
                         <h3 className={styles.headingMedium}>I strongly recommend to read through my guidelines for maximum sensations</h3>
-                        <Link href={'/'} className={styles.link}>Read the guidelines</Link>
+                        <Link href={'/guidelines'} className={styles.link}>Read the guidelines</Link>
                     </div>
                 </div>
             </div>
